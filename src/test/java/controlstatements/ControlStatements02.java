@@ -1,3 +1,5 @@
+package controlstatements;
+
 import java.util.Scanner;
 
 public class ControlStatements02 {
@@ -5,7 +7,7 @@ public class ControlStatements02 {
 
         // Enter 3 different numbers from the console and print them in descending order.
 
-        // 1. Using If statement
+        // Using If statement
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter first number: ");
         int a = scan.nextInt();
@@ -35,9 +37,5 @@ public class ControlStatements02 {
         }
         {
         }
-
-        // Using ternary
-
-        // Using switch-case
     }
 }
