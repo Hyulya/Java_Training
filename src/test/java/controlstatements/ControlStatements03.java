@@ -18,11 +18,11 @@ public class ControlStatements03 {
         int c = scan.nextInt();
 
         // 1. With If statement
-//        if (a < c && c < b) {
-//            System.out.println("The number "+c+" is between "+a+" and "+b);
-//        } else {
-//            System.out.println("The number "+c+" is not between "+a+" and "+b);
-//        }
+        if (a < c && c < b) {
+            System.out.println("The number "+c+" is between "+a+" and "+b);
+        } else {
+            System.out.println("The number "+c+" is not between "+a+" and "+b);
+        }
 
         // 2. With ternary
         String ifTrue = "The number is between number A and number B";

@@ -15,21 +15,19 @@ public class ControlStatements01 {
         int b = scan.nextInt();
 
         // 1. Using If statement
-//        if (a>b){
-//            System.out.println("The numbers in ascending order are: "+b+", "+a);
-//        } else if (a<b) {
-//            System.out.println("The numbers in ascending order are: "+a+", "+b);
-//        } else {
-//            System.out.println("The numbers "+a+"and "+b+" are equal");
-//        }
+        if (a>b){
+            System.out.println("The numbers in ascending order are: "+b+", "+a);
+        } else if (a<b) {
+            System.out.println("The numbers in ascending order are: "+a+", "+b);
+        } else {
+            System.out.println("The numbers "+a+"and "+b+" are equal");
+        }
 
         // Using ternary
         String ifTrue = String.format("The numbers in ascending order are %d,%d", b,a);
         String ifFalse = String.format("The numbers in ascending order are %d,%d",a,b);
         String statement = (a > b) ? ifTrue : ifFalse;
         System.out.println(statement);
-
-        // Using switch-case - can we do it with switch case? If yes, how?
 
     }
 }
