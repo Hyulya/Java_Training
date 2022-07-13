@@ -33,10 +33,7 @@ public class ControlStatements04 {
             System.out.println("I'm sick");
             if (hour>=9 && hour<=12) {
                 System.out.println("It's after 9pm and I won't go out");
-            } else {
-                System.out.println("It's not that late but I feel sick so I will stay home.");
-            }
-            if (money>1) {
+            } else if (money>1) {
                 System.out.println("I have money and I will buy medicine");
             } else if (money==0) {
                 System.out.println("I don't have money and I will stay at home and drink tea");
@@ -55,5 +52,6 @@ public class ControlStatements04 {
                 System.out.println("Money is a positive number!");
             }
         }
+        scan.close();
     }
 }

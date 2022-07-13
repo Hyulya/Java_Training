@@ -34,5 +34,6 @@ public class ControlStatements05 {
             default:
                 System.out.println("Invalid input! The number must be between 1 and 7!");
         }
+        scan.close();
     }
 }

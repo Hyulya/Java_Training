@@ -37,5 +37,6 @@ public class ControlStatements02 {
         }
         {
         }
+        scan.close();
     }
 }

@@ -29,5 +29,7 @@ public class ControlStatements01 {
         String statement = (a > b) ? ifTrue : ifFalse;
         System.out.println(statement);
 
+        scan.close();
+
     }
 }

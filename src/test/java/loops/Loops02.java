@@ -13,6 +13,7 @@ public class Loops02 {
         System.out.println("Enter the second number: ");
         int b = scan.nextInt();
 
+        // 1. With For loop
         if (a < b) {
             for (int i = a; i <= b; i++) {
                 System.out.print(i + " ");
@@ -24,5 +25,23 @@ public class Loops02 {
         } else {
             System.out.println("The entered numbers are equal!");
         }
+
+        // 2. With For While loop
+        if (a < b) {
+            int i=a;
+            while (i<=b){
+                System.out.println(i+" ");
+                i++;
+            }
+        } else if (a > b) {
+            int i = b;
+            while (i <= a) {
+                System.out.print(i + " ");
+                i++;
+            }
+        } else {
+            System.out.println("The entered numbers are equal!");
+        }
+        scan.close();
     }
 }

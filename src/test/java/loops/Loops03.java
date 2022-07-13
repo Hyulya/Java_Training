@@ -17,5 +17,7 @@ public class Loops03 {
             sum=sum+i;
         }
         System.out.println(sum);
+
+        scan.close();
     }
 }

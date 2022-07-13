@@ -30,5 +30,7 @@ public class ControlStatements03 {
         String operation =(a < c && c < b) ? ifTrue : ifFalse;
         System.out.println(operation);
 
+        scan.close();
+
     }
 }
