@@ -17,6 +17,13 @@ public class Loops01 {
             k++;
         }
 
+        // 3. With do while loop
+        int p = -20;
+        do {
+            System.out.println(p);
+            p++;
+        } while (p<=50);
+
         // Display all odd numbers from -10 to 10
 
         // 1. With For loop
@@ -25,13 +32,23 @@ public class Loops01 {
                 System.out.println(y);
         }
 
-        // 2. With For While loop
+        // 2. With While loop
         int m = -10;
         while (m <= 10) {
             if (m % 2 != 0)
                 System.out.println(m);
             m++;
         }
+
+        // 3. With Do while loop
+        int x = -10;
+        do {
+            x++;
+            if (x%2!=0){
+                System.out.println(x);
+            }
+        } while (x<10);
+
 
         // Display the numbers 10 to 1 (reverse order)
 
@@ -40,12 +57,18 @@ public class Loops01 {
             System.out.println(z);
         }
 
-        // 2. With For While loop
+        // 2. With While loop
         int n = 10;
         while (n >= 1) {
             System.out.println(n);
             n--;
         }
 
+        // 3. With Do while loop
+        int g = 10;
+        do {
+            System.out.println(g);
+            g--;
+        } while (g>=1);
     }
 }

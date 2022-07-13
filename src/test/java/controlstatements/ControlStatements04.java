@@ -35,10 +35,8 @@ public class ControlStatements04 {
                 System.out.println("It's after 9pm and I won't go out");
             } else if (money>1) {
                 System.out.println("I have money and I will buy medicine");
-            } else if (money==0) {
-                System.out.println("I don't have money and I will stay at home and drink tea");
             } else {
-                System.out.println("Money is a positive number!");
+                System.out.println("I don't have money and I will stay at home and drink tea");
             }
         } else {
             System.out.println("I'm healthy.");
@@ -48,8 +46,6 @@ public class ControlStatements04 {
                 System.out.println("I have more than 10 leva, I will party all night");
             } else if (money==0) {
                 System.out.println("I have no money, so I will stay at home and play games");
-            } else {
-                System.out.println("Money is a positive number!");
             }
         }
         scan.close();

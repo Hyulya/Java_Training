@@ -26,7 +26,7 @@ public class Loops02 {
             System.out.println("The entered numbers are equal!");
         }
 
-        // 2. With For While loop
+        // 2. With While loop
         if (a < b) {
             int i=a;
             while (i<=b){

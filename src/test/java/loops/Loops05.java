@@ -12,8 +12,10 @@ public class Loops05 {
         System.out.println("Enter a number: ");
         int n = scan.nextInt();
         int counter =0;
+        boolean isFirstNumberPrinted=false;
 
-        for (int i = 3; i < n; i++) {
+        // Version 1:
+        for (int i = 3; i <= n; i++) {
             if (i % 3 == 0) {
                 System.out.print(i);
                 counter++;
@@ -22,6 +24,18 @@ public class Loops05 {
                 } else {
                     System.out.print(",");
                 }
+            }
+        }
+
+        // Version 2:
+        for (int i = 3; i <= n; i++) {
+            if (i % 3 == 0) {
+                if (isFirstNumberPrinted) {
+                    System.out.print(",");
+                } else {
+                    isFirstNumberPrinted = true;
+                }
+                System.out.print(i);
             }
         }
         scan.close();
