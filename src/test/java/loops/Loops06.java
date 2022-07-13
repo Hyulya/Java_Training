@@ -29,7 +29,8 @@ public class Loops06 {
                 skippedNum = skippedNum + 3;
             } else {
                 System.out.print(i * i);
-                if (i == b) {
+                sum=sum+(i*i);
+                if (sum>250) {
                     break;
                 }
                 System.out.print(",");
