@@ -1,4 +1,4 @@
-package loops;
+package loops.udemyandtechproexamples;
 
 public class Loops07Udemy {
     public static void main(String[] args) {

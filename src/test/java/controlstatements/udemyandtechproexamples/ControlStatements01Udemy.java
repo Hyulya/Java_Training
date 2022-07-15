@@ -1,8 +1,8 @@
-package controlstatements;
+package controlstatements.udemyandtechproexamples;
 
 import java.util.Scanner;
 
-public class ControlStatements06Udemy {
+public class ControlStatements01Udemy {
     public static void main(String[] args) {
         /* Create a new switch statement using char instead of int (use Scanner class)
         Create a new char variable
