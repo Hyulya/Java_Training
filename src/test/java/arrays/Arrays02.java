@@ -1,10 +1,13 @@
 package arrays;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Arrays02 {
     public static void main(String[] args) {
+        /*
+        Read an array from the console and find the smallest number a multiple of 3 from the array.
+        If there is no such number, print an appropriate message.
+        */
 
         Scanner scan = new Scanner(System.in);
         System.out.println("Enter the size for the array: ");

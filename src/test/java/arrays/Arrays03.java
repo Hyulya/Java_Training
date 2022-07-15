@@ -6,9 +6,15 @@ import java.util.Scanner;
 
 public class Arrays03 {
     public static void main(String[] args) {
+        /*
+        From the console enter an array size that is a multiple of 2.
+        Then enter half of the elements (depending on the size of the array).
+        Set the second half of the array with values like the first half.
+        Last - print the array.
+         */
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter an even number");
+        System.out.println("Enter an even number:");
         int size = scan.nextInt();
         int[] myArray = new int[size];
         int counter=1;
