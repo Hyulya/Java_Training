@@ -23,5 +23,6 @@ public class Arrays04 {
             }
         }
         System.out.println(Arrays.toString(array));
+        scan.close();
     }
 }

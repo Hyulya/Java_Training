@@ -32,4 +32,5 @@ public class Arrays02 {
         } else {
             System.out.println("The smallest multiple of 3 is " + smallest);
         }
+        scan.close();
     }}

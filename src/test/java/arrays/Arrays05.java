@@ -30,5 +30,6 @@ public class Arrays05 {
         else {
             System.out.println("The array is mirrored.");
         }
+        scan.close();
     }
 }
