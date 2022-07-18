@@ -30,10 +30,17 @@ public class Arrays01 {
 
         // Read an array from the console and find the numbers that are a multiple of 3 from the array.
 
-        int arr3[]={10,66,12,417,5};
+        int arr3[]={10,12,66,417,5};
+        boolean flag=false;
         for (int element : arr3) {
             if ((element % 3 == 0)) {
-                System.out.print(element + " ");
+                System.out.print(element+" ");
+                flag=true;
             }
+        }
+        if (flag) {
+            System.out.println("--> the numbers multiplied by 3");
+        } else {
+            System.out.println("No numbers in the array that are multiplied by 3");
         }
 }}
