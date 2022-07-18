@@ -22,7 +22,6 @@ public class Arrays04 {
                 array[i] = array[i - 1] + array[i - 2];
             }
         }
-
         System.out.println(Arrays.toString(array));
     }
 }

@@ -36,6 +36,8 @@ public class Arrays01 {
         for (int element : arr3) {
             if ((element%3==0)){
                 System.out.print(element+" ");
+            } else {
+                System.out.println("None of the elements is a multiply of 3"); // to be checked with the mentor
             }
     }
 }}

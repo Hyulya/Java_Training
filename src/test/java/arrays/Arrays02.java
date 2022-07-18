@@ -26,6 +26,10 @@ public class Arrays02 {
             if (myArray[i] < smallest&&myArray[i]%3==0) {
                 smallest = myArray[i];
             }
-
-        }System.out.println("The smallest multiple of 3 is "+smallest);
+        }
+        if (smallest%3!=0) {
+            System.out.println("There's no number multiply of 3");
+        } else {
+            System.out.println("The smallest multiple of 3 is " + smallest);
+        }
     }}

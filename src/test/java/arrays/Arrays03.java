@@ -14,8 +14,16 @@ public class Arrays03 {
          */
 
         Scanner scan = new Scanner(System.in);
-        System.out.println("Enter an even number:");
+        System.out.println("Enter a number:");
         int size = scan.nextInt();
+
+        // to be checked with the mentor
+
+//        if (size%2!=0){
+//            System.out.println("Please enter an even number:");
+//        }
+//        scan.nextInt();
+
         int[] myArray = new int[size];
         int counter=1;
         int counter2=0;

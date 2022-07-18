@@ -9,13 +9,21 @@ public class Arrays06 {
     // elements with a value equal to the element index multiplied by 3. Print the elements on the screen.
 
     public static void main(String[] args) {
+//        With Scanner class:
+//        Scanner scan = new Scanner(System.in);
+//        System.out.println("Enter 10 double values for the elements in an array:\r");
+//        double[] values = new double[10];
+//        for (double i = 0; i < 10; i++) {
+//            values[(int) i] = scan.nextDouble()*3; // ask the mentor
+//        }
+//        System.out.println("The array with the multiplied by 3 values is: " + Arrays.toString(values));
+//    }
 
-        Scanner scan = new Scanner(System.in);
-        System.out.println("Enter 10 double values for the elements in an array:\r");
-        double[] values = new double[10];
-        for (double i = 0; i < 10; i++) {
-            values[(int) i] = scan.nextDouble()*3; // ask the mentor
+        // With no scanner class:
+        double [] myThirdIntArray = new double[10];
+        for (int i=0;i< myThirdIntArray.length;i++) {
+            myThirdIntArray[i]=i*3;
         }
-        System.out.println("The array with the multiplied by 3 values is: " + Arrays.toString(values));
-    } }
+        System.out.println(Arrays.toString(myThirdIntArray));
+}}
 
