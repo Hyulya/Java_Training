@@ -7,17 +7,20 @@ public class Bookstore {
     List<String> bookNames;
     double price;
 
+    // Constructor
+
     public Bookstore(int quantity, List<String> bookNames, double price) {
         this.quantity = quantity;
         this.bookNames = bookNames;
         this.price = price;
     }
 
+    // Methods
+
     public int checkAvailableBooks() {
         System.out.println(quantity);
         return quantity;
     }
-
 
     public void findByBookName(String bookName) {
         boolean isFound = false;
@@ -38,6 +41,8 @@ public class Bookstore {
         quantity = quantity - 1;
         System.out.println("Book quantity is " + quantity);
     }
+
+    // getter and setters, toString();
 
     public int getQuantity() {
         return quantity;

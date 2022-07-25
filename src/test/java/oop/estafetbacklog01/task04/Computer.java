@@ -87,6 +87,45 @@ public class Computer {
 
     // getters and setters
 
+    public boolean isNotebook() {
+        return isNotebook;
+    }
+
+    public int getYear() {
+        return year;
+    }
+
+    public void setYear(int year) {
+        this.year = year;
+    }
+
+    public void setPrice(double price) {
+        this.price = price;
+    }
+
+    public double getHardDiskMemory() {
+        return hardDiskMemory;
+    }
+
+    public void setHardDiskMemory(double hardDiskMemory) {
+        this.hardDiskMemory = hardDiskMemory;
+    }
+
+    public double getFreeMemory() {
+        return freeMemory;
+    }
+
+    public void setFreeMemory(double freeMemory) {
+        this.freeMemory = freeMemory;
+    }
+
+    public String getOperationSystem() {
+        return operationSystem;
+    }
+
+    public void setOperationSystem(String operationSystem) {
+        this.operationSystem = operationSystem;
+    }
 
     // toString() method in order to be able to display all fields for the computers
 

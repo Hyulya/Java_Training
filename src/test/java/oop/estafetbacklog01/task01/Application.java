@@ -12,6 +12,8 @@ public class Application {
         Friends friends = new Friends(persons);
         System.out.println("Friends: " + friends);
 
+        // Creating some family members from the Person class
+
         Person mom = new Person("Leman", "Aptish", 56, 1.60, 70, "female");
         Person dad = new Person("Ertan", "Aptish", 56, 1.80, 80, "male");
 

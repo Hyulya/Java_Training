@@ -1,4 +1,4 @@
-package oop.udemyandtechproexamples;
+package oop.udemyandtechproexamples.ooppart01.classesandconstructors;
 
 public class SimpleCalculatorRunner {
     public static void main(String[] args) {

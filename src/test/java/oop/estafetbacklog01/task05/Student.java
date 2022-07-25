@@ -1,4 +1,4 @@
-package oop.estafetbacklog01.task05notready;
+package oop.estafetbacklog01.task05;
 
 public class Student {
 
@@ -19,6 +19,7 @@ public class Student {
         this.yearInCollege = 1;
         this.isDegree = false;
         this.scholarshipMoney = 0;
+        this.subject = "No subject yet"; //to avoid NullPointerException
     }
 
     // Constructor with parameters that calls the default constructor and
@@ -28,7 +29,16 @@ public class Student {
         this.name = name;
         this.subject = subject;
         this.age = age;
-        System.out.println("Second constructor.");
+    }
+
+    public Student(String name, String subject, double grade, int yearInCollege, int age, boolean isDegree, double scholarshipMoney) {
+        this.name = name;
+        this.subject = subject;
+        this.grade = grade;
+        this.yearInCollege = yearInCollege;
+        this.age = age;
+        this.isDegree = isDegree;
+        this.scholarshipMoney = scholarshipMoney;
     }
 
     @Override
@@ -54,13 +64,13 @@ public class Student {
     public void upYear() {
         if (!isDegree) {
             yearInCollege++;
-            if (yearInCollege==4) {
-                isDegree=true;
+            if (yearInCollege == 4) {
+                isDegree = true;
             }
         } else {
             System.out.println("The student has already graduated.");
         }
-
+    }
 
     /*
     Method double receiveScholarship(double min, double amount) – adds the amount the money of the student -
@@ -68,9 +78,72 @@ public class Student {
     his age is under 30 years old. The method returns the current money to the student (after their eventual raise)
      */
 
-//    public double receiveScholarship(double min, double amount) {
-//        return
-//    }
+    public double receiveScholarship(double min, double amount) {
+        if (grade >= min && age < 30) {
+            scholarshipMoney = +amount;
+        } else {
+            System.out.println("You need to study more to get a scholarship.");
+        }
+        return scholarshipMoney;
+    }
+
+    // getters and setters
+
+
+    public String getName() {
+        return name;
+    }
+
+    public void setName(String name) {
+        this.name = name;
+    }
+
+    public String getSubject() {
+        return subject;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public double getGrade() {
+        return grade;
+    }
+
+    public void setGrade(double grade) {
+        this.grade = grade;
+    }
+
+    public int getYearInCollege() {
+        return yearInCollege;
+    }
+
+    public void setYearInCollege(int yearInCollege) {
+        this.yearInCollege = yearInCollege;
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+    public void setAge(int age) {
+        this.age = age;
+    }
+
+    public boolean isDegree() {
+        return isDegree;
+    }
+
+    public void setDegree(boolean degree) {
+        isDegree = degree;
+    }
+
+    public double getScholarshipMoney() {
+        return scholarshipMoney;
+    }
+
+    public void setScholarshipMoney(double scholarshipMoney) {
+        this.scholarshipMoney = scholarshipMoney;
     }
 }
 

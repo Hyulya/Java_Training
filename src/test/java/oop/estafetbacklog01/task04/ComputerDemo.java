@@ -32,7 +32,7 @@ public class ComputerDemo {
 
         Computer computer4 = new Computer(2019, 3333, false, 100, 13, "Linux");
 
-        // Compare the prices of some of the computers (using the method comparePrice) and display an appropriate message.
+        // Compare the prices of some computers (using the method comparePrice) and display an appropriate message.
         System.out.println(computer.comparePrice(laptop)); // 1.0
         System.out.println(computer2.comparePrice(computer1)); // -1.0
         System.out.println(computer3.comparePrice(computer4)); // 0.0
