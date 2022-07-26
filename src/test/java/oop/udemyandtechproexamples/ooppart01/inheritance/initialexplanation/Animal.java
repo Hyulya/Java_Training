@@ -1,4 +1,4 @@
-package oop.udemyandtechproexamples.ooppart01.inheritance;
+package oop.udemyandtechproexamples.ooppart01.inheritance.initialexplanation;
 /*
 Inheritance - Animal is the parent class, Dog is the inherited class. We use the keyword "extends"
  */

@@ -21,6 +21,7 @@ public class Theory {
     1) used to call current class members (variables and methods). Required when we have a param with the same name
     as the instance variable (field)
     2) commonly used with constructors and setters, optionally in getters.
+    3) the current instance of a class
 
     NOTES:
     - we can use both super and this keywords anywhere in a class except for the static areas (static block or static method)
@@ -82,6 +83,52 @@ RULES  * Same method names
 RULES  * same name and same arguments
        * return type can be a subclass of the return type in the parent class
        * can't have a lower access modifier (parent method = protected, child method = private, but can't be public)
+
+IMPORTANT POINTS:
+       * only inherited methods can be overridden - the ones in child classes
+       * constructors and private method can't be overridden
+       * final methods can't be overridden
+       * a subclass can use super.methodName() to call the superclass version of an overridden method
+
+     */
+
+    /* Static vs Instance Methods
+
+       1) Static Methods
+       * declared with the static keyword
+       * static methods can't access instance methods and variables directly
+       * used for operations where the data from any instance of the class is not required
+       * in static methods we can't use this keyword
+       * for any method that doesn't use instance variables, we need to declare that method as a static one
+       * the main method is a static one - it's called by the JVM when it starts an application
+
+How to call static methods? -> ClassName.staticMethodName() or just the staticMethodName() if in the same class.
+
+       2) Instance Methods
+       * belong to an instance of a class
+       * to use an instance method we need to create an object/instantiate a class with the new keyword
+       * can access instance methods and variables directly
+       * can access static methods and static variables directly
+
+     */
+
+    /* Static vs Instance variables
+
+       1) Static Variables
+       * declared by the static keyword
+       * static variables = static member variables
+       * every instance of the class shares the same static variable
+       * if there are changes on the static variable, for all the instances the change will be applied
+       * not used often but very useful for:
+         - using Scanner - we can declare scanner as a static variable, so that static methods can access it directly
+
+       2) Instance variables
+       * no static keyword here
+       * instance variables = fields / member variables
+       * they belong to an instance of a class
+       * every instance has its own copy of an instance variable
+       * every instance can have a different value / state
+       * instance variables represent the state of an instance
 
      */
 }

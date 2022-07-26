@@ -10,9 +10,8 @@ displays it in the console.
  */
 public class CurrentDate {
 
-    public void printCurrentDate() {
+    public LocalDate getCurrentDate() {
         LocalDate myDateObject = LocalDate.now();
-        System.out.println("Today the date is: " + myDateObject);
+        return myDateObject;
     }
-
 }

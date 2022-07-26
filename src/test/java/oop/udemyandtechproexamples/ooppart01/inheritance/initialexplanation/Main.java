@@ -1,4 +1,4 @@
-package oop.udemyandtechproexamples.ooppart01.inheritance;
+package oop.udemyandtechproexamples.ooppart01.inheritance.initialexplanation;
 
 public class Main {
     public static void main(String[] args) {

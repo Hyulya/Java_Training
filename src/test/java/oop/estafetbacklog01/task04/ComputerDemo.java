@@ -13,7 +13,7 @@ public class ComputerDemo {
          */
 
         Computer computer = new Computer(2020, 1000, false, 5, 1000, "Mac");
-        Computer laptop = new Computer(2022, 2000, false, 10, 5, "Windows 11");
+        Computer laptop = new Computer(2022, 2000, true, 10, 5, "Windows 11");
 
         computer.useMemory(100);
         laptop.changeOperationSystem("Mac");
@@ -33,9 +33,9 @@ public class ComputerDemo {
         Computer computer4 = new Computer(2019, 3333, false, 100, 13, "Linux");
 
         // Compare the prices of some computers (using the method comparePrice) and display an appropriate message.
-        System.out.println(computer.comparePrice(laptop)); // 1.0
-        System.out.println(computer2.comparePrice(computer1)); // -1.0
-        System.out.println(computer3.comparePrice(computer4)); // 0.0
+        computer.printComparePrice(laptop); // 1.0
+        computer2.printComparePrice(computer1); // -1.0
+        computer3.printComparePrice(computer4); // 0.0
 
     }
 }

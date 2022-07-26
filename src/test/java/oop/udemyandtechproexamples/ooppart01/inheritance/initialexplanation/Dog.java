@@ -1,6 +1,8 @@
-package oop.udemyandtechproexamples.ooppart01.inheritance;
+package oop.udemyandtechproexamples.ooppart01.inheritance.initialexplanation;
 
-public class Dog extends Animal{
+import oop.udemyandtechproexamples.ooppart01.inheritance.initialexplanation.Animal;
+
+public class Dog extends Animal {
 
     // We create fields that are unique for Dog's class - relating to a dog.
     private int eyes;

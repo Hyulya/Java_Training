@@ -1,6 +1,8 @@
-package oop.udemyandtechproexamples.ooppart01.inheritance;
+package oop.udemyandtechproexamples.ooppart01.inheritance.initialexplanation;
 
-public class Fish extends Animal{
+import oop.udemyandtechproexamples.ooppart01.inheritance.initialexplanation.Animal;
+
+public class Fish extends Animal {
 
     private int gills;
     private int eyes;

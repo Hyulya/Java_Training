@@ -72,7 +72,7 @@ public class Computer {
     of the computer passed as an argument is higher return 1, and if they are equal the method returns a value of 0.
      */
 
-    public double comparePrice(Computer c) {
+    public int comparePrice(Computer c) {
         if (price > c.getPrice()) {
             // this > c the return will be -1
             return -1;
@@ -82,6 +82,17 @@ public class Computer {
         } else {
             // this == c the return 0
             return 0;
+        }
+    }
+
+    public void printComparePrice(Computer c) {
+        int compareResult=comparePrice(c);
+        if (compareResult==-1){
+            System.out.println("This computer is more expensive");
+        } else if (compareResult==1) {
+            System.out.println("This computer is cheaper");
+        } else {
+            System.out.println("Prices are the same");
         }
     }
 
