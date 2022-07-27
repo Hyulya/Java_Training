@@ -9,14 +9,5 @@ class Bike{
         Bike obj=new  Bike();
 //        obj.run();
     }
-}
 
-/* FINAL keyword:
-   - a final variable is a constant - can't be changed
-   - a final method can't be overridden
-   - a final class can't be extended
-   - final methods can be inherited but can't be overridden
-   - blank final variable = not initialized at the time of declaration
-   - blank variables can be initialized in constructors
-   -
- */
+}

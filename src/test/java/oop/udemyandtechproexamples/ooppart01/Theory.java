@@ -131,4 +131,18 @@ How to call static methods? -> ClassName.staticMethodName() or just the staticMe
        * instance variables represent the state of an instance
 
      */
+
+    /* FINAL keyword: https://www.javatpoint.com/final-keyword
+
+   - a final variable is a constant - can't be changed
+   - a final parameter is a constant - can't be changed
+   - a final method can't be overridden
+   - a final class can't be extended
+   - final methods can be inherited but can't be overridden
+   - blank final variable = not initialized at the time of declaration
+   - blank variables can be initialized only in constructors
+   - static blank variable = a variable not initialized at the time of declaration is known as static blank final variable.
+                             It can be initialized only in static block.
+   - is there a final constructor? - no, because the constructor is never inherited
+ */
 }
