@@ -11,7 +11,6 @@ displays it in the console.
 public class CurrentDate {
 
     public LocalDate getCurrentDate() {
-        LocalDate myDateObject = LocalDate.now();
-        return myDateObject;
+        return LocalDate.now();
     }
 }

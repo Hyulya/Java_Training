@@ -1,12 +1,13 @@
-package oop.estafetbacklog01.task01;
+package oop.udemyandtechproexamples.ooppart01.classesandconstructors;
+
+import oop.estafetbacklog01.task01.Person;
 
 import java.util.Arrays;
 
-public class Friends {
-
+public class EstafetFriends {
     private Person[] friends;
 
-    public Friends(Person[] friends) {
+    public EstafetFriends(Person[] friends) {
         this.friends = friends;
     }
 

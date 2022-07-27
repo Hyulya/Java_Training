@@ -19,10 +19,7 @@ public class BookstoreDemo {
         Book book04 = new Book("Selenium", "Selenium Author", 9.5, 5);
 
         // Add different books in the bookstore in different quantities
-        Bookstore bookstore = new Bookstore(11, List.of(book01,book02,book03,book04), 50.5);
-        System.out.println();
-        // Checking the available quantity for all books
-        bookstore.checkAvailableBooks();
+        Bookstore bookstore = new Bookstore(11, List.of(book01,book02,book03,book04), 97.5);
         System.out.println();
 
         // Check if the book exists in the bookstore
@@ -38,7 +35,7 @@ public class BookstoreDemo {
         System.out.println();
 
        // So when you search for a book, if it's found, return the book info.
-        bookstore.returnByBookName("SQL");
+        bookstore.returnByBookName("Java");
         System.out.println();
 
     }

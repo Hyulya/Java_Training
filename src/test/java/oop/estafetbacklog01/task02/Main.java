@@ -2,8 +2,7 @@ package oop.estafetbacklog01.task02;
 
 public class Main {
     public static void main(String[] args) {
-        CurrentDate myDate = new CurrentDate();
-        CurrentDatePrint datePrint = new CurrentDatePrint();
-        datePrint.printDate(myDate.getCurrentDate());
+        CurrentDate currentDate = new CurrentDate();
+        System.out.println("Joro has a birthday today: " +currentDate.getCurrentDate());
     }
 }

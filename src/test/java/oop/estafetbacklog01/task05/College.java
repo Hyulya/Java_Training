@@ -24,12 +24,14 @@ public class College {
         // Adding scholarship
         System.out.println("Scholarship status: " + student01.receiveScholarship(3, 100));
         System.out.println("Scholarship status: " + student05.receiveScholarship(2, 50));
+        System.out.println();
 
         // Transferring to a higher year
         student02.upYear();
         System.out.println("Student's updated year: " + student02.getYearInCollege());
         student03.setDegree(true);
         student03.upYear();
+        System.out.println();
 
         // Creating a student group
         StudentGroup studentGroup01 = new StudentGroup("Maths");
@@ -43,10 +45,13 @@ public class College {
             if (s != null)
                 System.out.println(s);
         }
-        System.out.println(studentGroup01.getGroupSubject());
+        System.out.println("Group subject is: " +studentGroup01.getGroupSubject());
+        System.out.println();
 
         // Empty group
+        System.out.println("The empty group: ");
         studentGroup01.emptyGroup();
+        System.out.println();
 
         // Best student method
         Student[] students = {student01, student02, student03, student04};
@@ -55,9 +60,11 @@ public class College {
 
         studentGroup02.setStudents(students);
 
-        System.out.println(studentGroup02.theBestStudent());
+        System.out.println("Best student's name: " +studentGroup02.theBestStudent());
+        System.out.println();
 
         // Printing all students in the group
+        System.out.println("All students in the group: ");
         studentGroup02.printStudentsInGroup();
 
 

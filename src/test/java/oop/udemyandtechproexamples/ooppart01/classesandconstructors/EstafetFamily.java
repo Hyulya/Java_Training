@@ -1,12 +1,14 @@
-package oop.estafetbacklog01.task01;
+package oop.udemyandtechproexamples.ooppart01.classesandconstructors;
+
+import oop.estafetbacklog01.task01.Person;
 
 import java.util.Arrays;
 
-public class Family {
+public class EstafetFamily {
 
     private Person[] family;
 
-    public Family(Person[] family) {
+    public EstafetFamily(Person[] family) {
         this.family = family;
     }
 

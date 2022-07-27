@@ -1,6 +1,8 @@
-package oop.estafetbacklog01.task01;
+package oop.udemyandtechproexamples.ooppart01.classesandconstructors;
 
 /*
+ Version 1:
+
  Task 1 - Create a class to model a person. Let's assume that a person has a first name,
  last name, age, height (in centimetres), weight (in kilograms as a decimal fraction),
  and sex. Let this person have a family and a list of friends.
@@ -9,7 +11,7 @@ package oop.estafetbacklog01.task01;
  person -> relationship friends
   */
 
-public class Person {
+public class EstafetPerson {
 
     private String firstName;
     private String lastName;
@@ -18,13 +20,7 @@ public class Person {
     private double weight;
     private String sex;
 
-    private Person mom;
-
-    private Person dad;
-    private Person[] friends;
-    private Person[] family;
-
-    public Person(String firstName, String lastName, int age, double height, double weight, String sex) {
+    public EstafetPerson(String firstName, String lastName, int age, double height, double weight, String sex) {
         this.firstName = firstName;
         this.lastName = lastName;
         this.age = age;
@@ -79,38 +75,6 @@ public class Person {
 
     public void setSex(String sex) {
         this.sex = sex;
-    }
-
-    public Person[] getFriends() {
-        return friends;
-    }
-
-    public void setFriends(Person[] friends) {
-        this.friends = friends;
-    }
-
-    public Person[] getFamily() {
-        return family;
-    }
-
-    public void setFamily(Person[] family) {
-        this.family = family;
-    }
-
-    public Person getMom() {
-        return mom;
-    }
-
-    public void setMom(Person mom) {
-        this.mom = mom;
-    }
-
-    public Person getDad() {
-        return dad;
-    }
-
-    public void setDad(Person dad) {
-        this.dad = dad;
     }
 
     @Override

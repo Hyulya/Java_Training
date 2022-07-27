@@ -29,11 +29,6 @@ public class Bookstore {
 
     // Methods
 
-    public int checkAvailableBooks() {
-        System.out.println("Available books quantity: "+quantityAllBooks);
-        return quantityAllBooks;
-    }
-
     public void findByBookName(String bookName) {
         boolean isFound = false;
         for (Book book : books) {
@@ -75,7 +70,6 @@ public class Bookstore {
             System.out.println("The current available books quantity is " + quantityAllBooks);
         }
     }
-
 
     // getter and setters, toString();
 
