@@ -23,11 +23,11 @@ public class BookstoreDemo {
         System.out.println();
 
         // Check if the book exists in the bookstore
-        bookstore.findByBookName("Java");
+        bookstore.findByBookName("JDBC");
         System.out.println();
 
         // If you buy a book reduce the quantity of the given book
-        bookstore.buyBook("Java",2);
+        bookstore.buyBook("Java",3);
         System.out.println();
 
         // Print all the info for the bookstore
@@ -35,7 +35,7 @@ public class BookstoreDemo {
         System.out.println();
 
        // So when you search for a book, if it's found, return the book info.
-        bookstore.returnByBookName("Java");
+        bookstore.returnByBookName("Fairytale");
         System.out.println();
 
     }

@@ -28,8 +28,9 @@ public class Application {
 
         System.out.println(Arrays.toString(myself.getFamily()));
         System.out.println(Arrays.toString(myself.getFriends()));
+        System.out.println();
 
-        // Creating a person and assigning a family or friends to him/her - i.e. creating the relationship between them
+        // Assigning a family or friends to the already created person - i.e. creating the relationship between them
         // (using single objects)
 
         myself.setDad(dad);
