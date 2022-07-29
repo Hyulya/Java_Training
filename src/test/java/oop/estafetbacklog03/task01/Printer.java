@@ -1,18 +1,18 @@
-package oop.udemyandtechproexamples.ooppart02.encapsulation.challengetask;
+package oop.estafetbacklog03.task01;
 
-public class PrinterMyVersion {
+public class Printer {
 
     private int tonerLevel;
     private int pagesPrinted;
     private boolean duplexPrinter;
 
-    public PrinterMyVersion(int tonerLevel, boolean duplexPrinter) {
+    public Printer(int tonerLevel, boolean duplexPrinter) {
         this.tonerLevel = tonerLevel;
         this.duplexPrinter = duplexPrinter;
         this.pagesPrinted=0;
     }
 
-    public PrinterMyVersion(int tonerLevel, int pagesPrinted, boolean duplexPrinter) {
+    public Printer(int tonerLevel, int pagesPrinted, boolean duplexPrinter) {
         this.tonerLevel = tonerLevel;
         this.pagesPrinted = pagesPrinted;
         this.duplexPrinter = duplexPrinter;

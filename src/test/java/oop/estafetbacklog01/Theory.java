@@ -30,9 +30,9 @@ public class Theory {
 - How can we access a property of a class if we have an object of that class?
    --> We put a dot after typing the object and can see all the class properties through this object
 
-- Can we use this() in a method? - Yes
+- Can we use this() in a method? - No
 
-- Can we call methods within a constructor? - No
+- Can we call methods within a constructor? - Yes
 
 - Can we call methods within other methods? - Yes
      */

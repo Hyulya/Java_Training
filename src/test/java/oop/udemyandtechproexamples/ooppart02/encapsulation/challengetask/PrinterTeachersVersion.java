@@ -7,13 +7,17 @@ public class PrinterTeachersVersion {
     private boolean duplexPrinter;
 
     public PrinterTeachersVersion(int tonerLevel, boolean duplexPrinter) {
+        validateToner(tonerLevel);
+        this.duplexPrinter = duplexPrinter;
+        this.pagesPrinted = 0;
+    }
+
+    private void validateToner(int tonerLevel){
         if(tonerLevel>-1 && tonerLevel <=100) {
             this.tonerLevel = tonerLevel;
         } else {
             this.tonerLevel=-1;
         }
-        this.duplexPrinter = duplexPrinter;
-        this.pagesPrinted = 0;
     }
 
     public int addToner(int tonerAmount) {
