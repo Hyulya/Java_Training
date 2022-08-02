@@ -13,7 +13,7 @@ and execute the following:
 
 public class Person extends ParentPerson {
 
-    static String name;
+    static String name="Hyu";
     int age;
 
     public Person(int personAge) {

@@ -1,19 +1,15 @@
 package oop.estafetbacklog02.task01;
 /*
-Create a class ‘ParentClass’ and declare an instance varable of type int.
-Create another class ‘ChildClass’ and declare same varable of type int
-wtih the same name but with different value. Inherite the ParentClass in the ChildClass.
+Create a class ‘ParentClass’ and declare an instance variable of type int.
+Create another class ‘ChildClass’ and declare same variable of type int
+with the same name but with different value. Inherit the ParentClass in the ChildClass.
 
  */
 public class ParentClass {
-    private int number;
+    int age=32;
 
-    //Constructor
-    public ParentClass(int numberValue) {
-        this.number = numberValue;
-    }
+    public int getAge() {
 
-    public int getNumber() {
-        return number;
+        return age;
     }
 }

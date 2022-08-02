@@ -7,26 +7,31 @@ public class Printer {
     private boolean duplexPrinter;
 
     public Printer(int tonerLevel, boolean duplexPrinter) {
-        this.tonerLevel = tonerLevel;
+        validateToner(tonerLevel);
         this.duplexPrinter = duplexPrinter;
         this.pagesPrinted=0;
     }
 
     public Printer(int tonerLevel, int pagesPrinted, boolean duplexPrinter) {
-        this.tonerLevel = tonerLevel;
+        validateToner(tonerLevel);
         this.pagesPrinted = pagesPrinted;
         this.duplexPrinter = duplexPrinter;
     }
 
-    public void fillUpToner(int fillingQuantity) {
-        if(tonerLevel<100 && tonerLevel>=0) {
-            if (fillingQuantity+tonerLevel<=100){
-                System.out.println("Toner filled successfully and current quantity is : " + (fillingQuantity+tonerLevel));
-            } else {
-                System.out.println("You're trying to fill the toner on the top of its capacity.");
-            }
+    private void validateToner(int tonerLevel){
+        if(tonerLevel>=0 && tonerLevel <=100) {
+            this.tonerLevel = tonerLevel;
         } else {
             System.out.println("Toner error.");
+        }
+    }
+
+    public void fillUpToner(int fillingQuantity) {
+        if (fillingQuantity+tonerLevel<=100){
+            this.tonerLevel+=fillingQuantity;
+            System.out.println("Toner filled successfully and current quantity is : " + (tonerLevel));
+        } else {
+            System.out.println("You're trying to fill the toner on the top of its capacity.");
         }
     }
 
@@ -47,4 +52,6 @@ public class Printer {
     public int getPagesPrinted() {
         return pagesPrinted;
     }
+
+
 }

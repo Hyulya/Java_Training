@@ -6,7 +6,8 @@ public class ParentPerson {
     }
 
     public void printAge(){
-        System.out.println("Testing the last task");
+
+        System.out.println("Testing the last task - extending the Parent class to ParentPerson.");
     }
 
 }

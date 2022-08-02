@@ -15,8 +15,10 @@ public class MainMyVersion {
         PrinterMyVersion printer = new PrinterMyVersion(20, true);
         System.out.println(printer.getTonerLevel()); // 20
 
-        printer.fillUpToner(90);
+        printer.fillUpToner(80);
+        System.out.println("+++++");
         System.out.println(printer.getTonerLevel());
+
 
         printer.printingPages(100);
     }

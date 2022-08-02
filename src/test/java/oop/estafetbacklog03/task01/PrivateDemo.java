@@ -10,7 +10,7 @@ Add methods to fill up the toner (up to a maximum of 100%), another method to si
 (which should increase the number of pages printed).
  */
 
-public class Main {
+public class PrivateDemo {
     public static void main(String[] args) {
 
         Printer printer = new Printer(20, true);
