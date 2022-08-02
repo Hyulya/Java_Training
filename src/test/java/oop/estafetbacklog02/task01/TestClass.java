@@ -13,7 +13,8 @@ public class TestClass {
 
         // Declare a superclass reference that is equal to the child class object and call the instance
         // variable and print it in the console.
-        ParentClass newParent = new ChildClass();
-        System.out.println(newParent.getAge());
+        ParentClass parentReference = new ChildClass();
+        System.out.println(parentReference.getAge());
     }
+
 }
