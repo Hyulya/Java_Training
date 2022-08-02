@@ -1,4 +1,4 @@
-package oop.estafetbacklog03.task02.demo;
+package oop.estafetbacklog03.task01.demo;
 
 /*
 Program using protected access modifier:
@@ -8,7 +8,7 @@ MultimediaPrinter class. They're both in different packages to show the usage an
 protected access modifier.
  */
 
-import oop.estafetbacklog03.task02.classes.printer.MultimediaPrinter;
+import oop.estafetbacklog03.task01.classes.printer.MultimediaPrinter;
 
 public class ProtectedDemo {
     public static void main(String[] args) {

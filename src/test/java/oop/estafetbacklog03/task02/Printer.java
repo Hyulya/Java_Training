@@ -1,4 +1,4 @@
-package oop.estafetbacklog03.task01;
+package oop.estafetbacklog03.task02;
 
 public class Printer {
 
@@ -9,7 +9,7 @@ public class Printer {
     public Printer(int tonerLevel, boolean duplexPrinter) {
         validateToner(tonerLevel);
         this.duplexPrinter = duplexPrinter;
-        this.pagesPrinted=0;
+        this.pagesPrinted = 0;
     }
 
     public Printer(int tonerLevel, int pagesPrinted, boolean duplexPrinter) {

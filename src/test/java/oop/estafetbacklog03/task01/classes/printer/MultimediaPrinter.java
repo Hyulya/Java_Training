@@ -1,6 +1,6 @@
-package oop.estafetbacklog03.task02.classes.printer;
+package oop.estafetbacklog03.task01.classes.printer;
 
-import oop.estafetbacklog03.task02.classes.scanner.ScannerDevice;
+import oop.estafetbacklog03.task01.classes.scanner.ScannerDevice;
 
 public class MultimediaPrinter extends ScannerDevice {
     private int tonerLevel;
@@ -14,26 +14,11 @@ public class MultimediaPrinter extends ScannerDevice {
         this.pagesPrinted=0;
     }
 
-    public MultimediaPrinter(int tonerLevel, int pagesPrinted, boolean duplexPrinter) {
-        validateToner(tonerLevel);
-        this.pagesPrinted = pagesPrinted;
-        this.duplexPrinter = duplexPrinter;
-    }
-
     private void validateToner(int tonerLevel){
         if(tonerLevel>=0 && tonerLevel <=100) {
             this.tonerLevel = tonerLevel;
         } else {
             System.out.println("Toner error.");
-        }
-    }
-
-    public void fillUpToner(int fillingQuantity) {
-        if (fillingQuantity+tonerLevel<=100){
-            this.tonerLevel+=fillingQuantity;
-            System.out.println("Toner filled successfully and current quantity is : " + (tonerLevel));
-        } else {
-            System.out.println("You're trying to fill the toner on the top of its capacity.");
         }
     }
 
