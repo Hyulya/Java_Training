@@ -38,13 +38,4 @@ public class MultimediaPrinter extends ScannerDevice {
         printingPages(1);
     }
 
-    public int getTonerLevel() {
-        return tonerLevel;
-    }
-
-    public int getPagesPrinted() {
-        return pagesPrinted;
-    }
-
-
 }

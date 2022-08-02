@@ -13,11 +13,10 @@ import oop.estafetbacklog03.task01.classes.scanner.ScannerDevice;
 
 public class ProtectedDemo {
     public static void main(String[] args) {
-        String someText = "random text";
         MultimediaPrinter multimediaPrinter = new MultimediaPrinter(100,true);
-        multimediaPrinter.scanAndPrint("some text");
-//        multimediaPrinter.content; // to show that we can't access the field "content" from the ProtectedDemo
+        multimediaPrinter.scanAndPrint("This is the scanned and printed text.");
+//        multimediaPrinter.content;
         ScannerDevice scannerDevice = new ScannerDevice();
-//        scannerDevice.content // to show that we can't access the field "content" from the ProtectedDemo
+//        scannerDevice.content;
     }
 }
