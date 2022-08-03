@@ -38,10 +38,10 @@ public class Printer {
     public void printingPages(int pagesToBePrinted) {
         if(!duplexPrinter) {
             pagesPrinted+=pagesToBePrinted;
-            System.out.println("The total number of printed pages with single page printing is: "+pagesPrinted);
+            System.out.println("The total number of printed papers with single page printing is: "+pagesPrinted);
         } else {
             pagesPrinted=((pagesPrinted+pagesToBePrinted)/2)+((pagesPrinted+pagesToBePrinted)%2);
-            System.out.println("The total number of printed pages with duplex page printing is: "+pagesPrinted);
+            System.out.println("The total number of printed papers with duplex page printing is: "+pagesPrinted);
         }
     }
 

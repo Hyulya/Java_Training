@@ -12,7 +12,7 @@ Add methods to fill up the toner (up to a maximum of 100%), another method to si
 public class PrivateDemo {
     public static void main(String[] args) {
 
-        Printer printer = new Printer(20, true);
+        Printer printer = new Printer(20, false);
         System.out.println(printer.getTonerLevel());
 
         printer.fillUpToner(50);
