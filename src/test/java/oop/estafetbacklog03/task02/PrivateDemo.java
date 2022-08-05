@@ -1,4 +1,5 @@
 package oop.estafetbacklog03.task02;
+
 /*
 Program using private access modifier:
 
@@ -12,10 +13,10 @@ Add methods to fill up the toner (up to a maximum of 100%), another method to si
 public class PrivateDemo {
     public static void main(String[] args) {
 
-        Printer printer = new Printer(20, false);
+        Printer printer = new Printer(20, true);
         System.out.println(printer.getTonerLevel());
 
-        printer.fillUpToner(50);
+        printer.fillUpToner(90);
         System.out.println(printer.getTonerLevel());
 
         printer.printingPages(100);
